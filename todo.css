@@ -1,0 +1,111 @@
+* {
+    box-sizing: border-box;
+}
+
+body{
+    background:rgb(28, 128, 8);
+}
+
+.wrapper{
+    max-width: 400px;
+    margin: auto;
+    margin-top: 50px;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: .3rem;
+    height: 200px;
+}
+
+.add-new{
+    padding: 15px;
+    background: #e2e4e6;
+    display: flex;
+}
+
+.add-new input{
+    border: 2px solid #c0c0c0;
+    padding: 12px;
+    border-radius: .3rem;
+    height: 35px;
+    width: 100%;
+    margin-right: 6px;
+}
+
+.add-new input:focus{
+    border: 2px solid dodgerblue;
+    transition: .5s all;
+}
+
+.add-new .btn{
+    border: none;
+    color: #fff;
+    background: steelblue;
+    cursor: pointer;
+    height: 35px;
+    border-radius: .3rem;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-weight: 500;
+}
+
+.add-new .btn:hover, .add-new .btn:focus{
+    background: orangered;
+}
+
+.empty{
+    color: #808080;
+    font-size: 1.3em;
+}
+
+.list{
+    padding: 15px;
+}
+
+.list h3{
+    margin-bottom: 10px;
+    margin-top: 0;
+    font-weight: 600;
+}
+
+.list ul{
+    list-style: none;
+    padding: 0;
+}
+
+.list ul li{
+    background: #eee;
+    padding: 15px;
+}
+
+.list ul li:first-child{
+    border-radius: 10px 10px 0 0;
+}
+
+.list ul li:last-child{
+    border-radius: 0 0 10px 10px;
+}
+
+.list ul li:only-child{
+    border-radius: 10px;
+}
+
+.list ul li:hover{
+    background: lightseagreen;
+    color: #fff;
+    padding: 15px;
+}
+
+.list ul li:not(:last-child){
+    border-bottom: 1px solid #ddd;
+}
+
+.list ul li .remove{
+    cursor: pointer;
+    float: right;
+    margin-left: auto;
+    display: none;
+}
+
+.list ul li:hover .remove{
+    display: inline-block;
+}
